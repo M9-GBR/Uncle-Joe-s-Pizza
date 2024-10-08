@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Mark Louis",
+        "review": "Love their delivery service very quick and easy to use.",
+        "rating": 4
+    },
+    {
+        "name": "Andy Shephard",
+        "review": "Easily deserves 5 stars, I finally found a way to get good tasting pizza for a low cost 😋.",
+        "rating": 5
+    },
+    {
+        "name": "Michael Trevor",
+        "review": "The customization interface is pretty cool, gives you a lot of options on how you want your pizza to turn out 👍🏽.",
+        "rating": 5
+    }
+]
