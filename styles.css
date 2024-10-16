@@ -53,6 +53,16 @@ br {
     padding: 10px !important;
 }
 
+.navbar-hide {
+    transform: translateY(-100%);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar-show {
+    transform: translateY(0);
+    transition: 0.3s all ease-in-out;
+}
+
 #logo-text {
     color: var(--yellow);
     font-family: broadway;
@@ -229,16 +239,18 @@ br {
 }
 
 #cStacks {
-    width: 57.4vw;
+    width: 45vw;
+    min-width: 300px;
     margin: auto;
 }
 
 #cStacks img {
-    width: 40vw;
+    border-radius: 5px;
+    width: inherit;
 }
 
 #stacks [type='button'] {
-    background-color: var(--trans-yellow);
+    background-color: var(--trans-black);
 }
 
 #stacks [type="button"]:first-child {
@@ -261,7 +273,7 @@ br {
 }
 
 .stack-info .name {
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: var(--light-yellow);
     font-weight: bold;
 }
@@ -274,6 +286,20 @@ br {
     font-size: 1.5vw;
 }
 
+@media screen and (max-width: 425px) {
+    .stack-info .name {
+        font-size: 2.5vw;
+    }
+
+    .price {
+        max-width: 2.2vw;
+    }
+
+    .stack-btn {
+        font-size: 2.2vw;
+    }
+}
+
 .stack-btn {
     background-color: var(--light-yellow);
     color: var(--dark-red);
@@ -281,6 +307,8 @@ br {
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
+    text-wrap: nowrap;
+    margin: auto 0;
 }
 
 @media screen and (max-width: 720px) {
